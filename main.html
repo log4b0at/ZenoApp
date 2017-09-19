@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta charset="utf8"/>
+		<style>
+			body, html{
+				font-family:sans-serif;
+				min-width:250px;
+				margin:0;
+				padding:0;
+				background-image: url(bg.jpg);
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				color:#ddd;
+			}
+			#ep{
+				border:0;
+				padding:8px;
+				font-size:15px;
+				margin-top:5px;
+				color:#ddd;
+				background-color:#3e8acb;
+				text-shadow:1px 1px 1px #000;
+			}
+			#getbutton{
+				border:0;
+				padding:8px;
+				font-size:15px;
+				margin-top:5px;
+				color:#ddd;
+				background-color:#3e8acb;
+			}
+			#links{
+				margin-top:10px;
+				background-color: rgba(255, 255, 255, 0.80);
+				
+			}
+			.link{
+				padding:5px;
+				color:#222;
+				display:block;
+				text-shadow:1px 1px 1px #000;
+			}
+			.link:hover{
+				color: rgba(255, 255, 255, 0.45);
+				background-color: rgba(22, 22, 22, 0.80);
+			}
+			h1{
+				margin:0;
+				background-color:#3e8acb;
+				padding:10px;
+				text-align:center;
+				font-size:18px;
+				color:#ddd;
+				
+			}
+			#container{
+				padding:10px;
+			}
+			.label{
+				font-weight:bold;
+				text-shadow:1px 1px 1px #000;
+			}
+			.fail{
+				display:block;
+				width:90%;
+				padding:5%;
+			}
+			.err{
+				text-align:center;
+				font-size:16px;
+				color:#222;
+				text-shadow:1px 1px 1px #000;
+			}
+			footer{
+				background-color:black;
+				color:white;
+				text-align:left;
+				padding:5px;
+			}
+			footer a{
+				color:#007cfa;
+				display:inline-block;
+				cursor:pointer;
+			}
+			.author{
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Zen'ô App (VOSTFR)</h1>
+			<div id="container">
+				<span class="label">Entrez un numéro d'épisode:</span> <input placeholder="________________" id="ep" type="number"/>
+				<input type="submit" id="getbutton" value="Get links"/>
+				<div id="links">
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			Developped by <span class="author">log4b0at</span> - <a id="website" tab-href="http://goo.gl/4zP1As">log4b0at.dev</a>
+		</footer>
+		<script src="download.js"></script>
+	</body>
+	
+</html>
